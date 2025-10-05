@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogsInGridCage</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            font-size: xxx-large;
+            color:white;
+        }
+        span:hover{
+            color:cyan;
+            background-color: black;
+            box-shadow:5px 5px 5px 2px;
+        }
+        .container{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:15px;
+        }
+        img{
+            object-fit:cover;
+            width:500px;
+            height:400px;
+            border-radius: 30px;
+            box-shadow:5px 5px 5px 1px; 
+        }
+        img:hover{
+            box-shadow:10px 10px 10px 5px grey;
+        }
+        @media (width<1200px) and (width>676px){
+            .container{
+                grid-template-columns: repeat(2,1fr);
+            }
+            img{
+                height:350px;
+                width:450px;
+            }
+        }
+        @media (width<675px){
+            .container{
+                grid-template-columns:1fr;
+            }
+            img{
+                width:400px;
+                height:300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center><h1><span>Dog Gallery</span></h1></center>
+    <div class="container">
+        <div class="dog"><img src="https://i.pinimg.com/736x/08/dc/dd/08dcddcb1677005be125a7b2dfe5d799.jpg" alt="Peaceful Dog"></div>
+        <div class="dog"><img src="https://i.pinimg.com/736x/d0/30/22/d03022239609322ce0c5f69b0d22910f.jpg" alt="Cheeky Dog"></div>
+        <div class="dog"><img src="https://i.pinimg.com/736x/62/92/bc/6292bc7fc135d814017a6cab4336c1d8.jpg" alt="Thief Dog"></div>
+        <div class="dog"><img src="https://i.pinimg.com/736x/40/20/ca/4020ca9f2e97b1fde483af3109529dbd.jpg" alt="Street Dog King"></div>
+        <div class="dog"><img src="https://i.pinimg.com/736x/01/59/98/015998511d0372d471f6b7ea8e777c69.jpg" alt="Hot Dogi"></div>
+        <div class="dog"><img src="https://i.pinimg.com/736x/57/76/df/5776df8e8c5e231e226423ebeb2cd8fb.jpg" alt="Detective Dog"></div>
+        <div class="dog"><img src="https://i.pinimg.com/736x/25/e5/0c/25e50cb5cf76ba70a9b67f3aaf085ccb.jpg" alt="Irritated Dog"></div>
+        <div class="dog"><img src="https://i.pinimg.com/736x/30/63/9f/30639f7d9ca8c9ee9e271db43f203a95.jpg" alt="Dog Bombing Dog"></div>
+        <div class="dog"><img src="https://i.pinimg.com/736x/d1/03/ac/d103ac5e1af1ec57b6a23d65a1d643e7.jpg" alt="Bread Dog"></div>
+    </div>
+</body>
+</html>

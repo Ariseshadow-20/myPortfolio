@@ -1,0 +1,160 @@
+*{
+    color:white;
+}
+body{
+    background-color:black;
+}
+a{
+    margin:15px;
+    color:white;
+    font-size: larger;
+}
+nav a:hover{
+    color:red;
+    box-shadow: 3px 3px 3px white;
+
+}
+nav{
+    color:white;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+nav a img{
+    height:58px;
+}
+a button{
+    color:white;
+    background-color: red;
+    width:140px;
+    height:35px;
+    border-radius: 15px;
+}
+a button:hover{
+    box-shadow:5px 5px 5px red;
+    background-color: white;
+    color:red;
+}
+.frow{
+    display:flex;
+    margin-left:50px;
+    place-content: center;
+}
+.frow p{
+    margin-top: 150px;
+    margin-left:200px;
+    font-size: x-large;
+}
+.frow p span.god{
+    color:red;
+    font-style: oblique;
+}
+.frow p span.world{
+    color:cyan;
+    font-family:cursive;
+}
+.frow img{
+    margin-top:80px;
+    border-radius: 50%;
+    box-shadow: 5px 0px 10px 10px darkgrey;
+    /* object-position:top; */
+    /* object-fit:cover; */
+}
+.frow img:hover{
+    box-shadow:0px 5px 10px 10px red;
+}
+#skill h1{
+    font-size: xx-large;
+}
+#skill ul li img{
+    height:80px;
+}
+#skill li{
+    font-size: large;
+}
+#work span{
+    color:black;
+    background-color:White;
+    opacity:80%;
+}
+#work p{
+    font-size: x-large;
+}
+#work a{
+    color:cyan;
+}
+#work a:hover{
+    color:gold;
+    box-shadow: 3px 3px 3px cyan;
+}
+#social h2 span:hover{
+    box-shadow:0px 0px 5px 5px white;
+    color:grey;
+}
+#social img{
+    height:60px;
+    display:flex;
+    flex-wrap:wrap;
+}
+#social img:hover{
+    box-shadow: 0px 0px 5px 5px;
+
+}
+footer{
+    place-self: center;
+    margin-bottom:0px;
+}
+
+@media (width>677px) and (width<1190px){
+    body{
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+    .frow{
+        display:flex;
+        flex-direction: column;
+    }
+    img, .frow p{
+        place-self: center;
+        margin:auto;
+    }
+    video{
+        width:500px;
+    }
+}
+
+@media(width<676px){
+    body{
+        display:flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+    .frow{
+        display:flex;
+        flex-direction: column;
+    }
+    img, .frow p{
+        place-self: center;
+        margin:auto;
+    }
+    video{
+        width:200px;
+    }
+}
+
+header{
+    background-image: url("./Downloads/rblack.jpeg");
+}
+
+#work p{
+    background-color: black;
+}
+#work{
+    background-image: url("./Downloads/RTree.jpeg");
+    background-image: url("./Downloads/dsky.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}

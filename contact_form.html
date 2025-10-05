@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_form</title>
+    <style>
+        *{
+            color:white;
+            font-size:large;
+        }
+        body{
+            background-image: url("./Downloads/mountainmoening.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        input,textarea{
+            background-color: black;
+        }
+        input:hover,textarea:hover{
+            background-color: cyan;
+            color:black;
+        }
+        nav a img{
+            height:85px;
+        }
+        nav a:hover{
+            box-shadow:0px 2px 5px 5px cyan;
+            color:cyan;
+        }
+        #social img{
+            height:55px;
+            margin:15px;
+        }
+        #social img:hover{
+            box-shadow:0px 0px 5px 5px grey;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <nav>
+            <h4>
+                <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:80px;margin-top:10px;">
+                    <a href="./index.html"><img src="./Downloads/bean-bag.gif"><br>Home</a>
+                </div>
+            </h4>
+        </nav>
+        <h1 style="font-size: xx-large;">Contact Me</h1>
+        <form>
+            <label>Name: <input type="text" placeholder="Enter Your Fullname"></label><br><br>
+            <label>Email: <input type="email" placeholder="Enter A Valid Email"></label><br><br>
+            <label>Phone number: <input type="tel" maxlength="10" placeholder="Enter A Valid Number"></label><br><br>
+            <label>Age: <input type="date"></label><br><br>
+            <label>Subject: <input type="text" placeholder="Enter Your Briefings"></label><br><br>
+            <label>Message: <textarea rows="4" placeholder="Describe Your Purpose"></textarea></label><br><br>
+            <label name="gender">Gender: </label>
+            <label><input type="radio" name="gender">Male</label>
+            <label><input type="radio" name="gender">Female</label>
+            <br><br>
+            <a href="./index.html" target="_blank" rel="noopener noreferrer"><input type="button" value="Submit"></a>
+        </form>
+        <br>
+        <div id="social">
+            <footer>
+                <div style="display:flex; flex-wrap: wrap;justify-content:center;">
+                    <a href="mailto:devansh.25bcs10229@sst.scaler.com"><img src="./Downloads/communication.png" alt="Mailme"></a>
+                    <a href="https://github.com/Ariseshadow-20" target="_blank" ><img src="./Downloads/social.png" alt="Gituhb"></a>
+                    <a href="https://codeforces.com/profile/Ariseshadow-20" target="_blank"><img src="./Downloads/codeforces.png" alt="Codeforces"></a>
+                    <a href="https://www.linkedin.com/in/devansh-mittal-3ab66337a/" target="_blank"><img src="./Downloads/linkedin.png" alt="Linkedin"></a>
+                    <a href="https://leetcode.com/u/Ariseshadow-20/" target="_blank"><img src="./Downloads/leetcode.png" alt="Leetcode"></a>
+                </div>
+            </footer>
+        </div>
+    </center>
+</body>
+</html>
+
+
+
+
